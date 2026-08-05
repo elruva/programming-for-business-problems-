@@ -5,16 +5,53 @@ Course materials and coursework for a computational / programming course.
 ## Layout
 
 - `PRACTICE.md` — the daily practice routine (PRIMM loop, schedule, troubleshooting)
+- `github/README.md` — the user's own git/GitHub command notes
 - `assignments/ASSIGNMENTS.md` — briefs for the three practical projects (lectures
   5, 10 and 13). **Read before working on any project**; each project's scope is
   limited to the lectures before its date.
-- `lectures/` — lecture materials, one subfolder per session
-  - `L1/` — Session 0 (Introduction), Session 1 (Python Basics), plus `OUTLINE.md`
-    - `01-python-basics/` — older ZIP copy of the assignment content, no git history
-- `assignments/` — coursework and problem sets
-  - `01-python-basics-elruva/` — the cloned course repo (**work here**; has git remote)
+- `lectures/` — lecture materials, one folder per lecture (see navigation below)
+- `assignments/assignment-1-elruva/` — the cloned course repo for assignment 1
+- `exam_2024/` — past exam paper and its task files
 - `.claude/skills/` — project-scoped Claude Code skills
 - `.claude/settings.local.json` — local Claude Code settings
+
+## Navigating `lectures/`
+
+Every lecture folder holds the same two things: the **session slide PDF**, and the
+**cloned exercise repo** (named `0n-topic-elruva`). Inside the repo, numbered
+subfolders group the exercises by topic, and every subfolder runs its own PRIMM
+cycle — `NN_predict.py` → `NN_investigate.py` → `NN_modify.py` → `NN_make.py`,
+numbered in the order you work them.
+
+```
+lectures/L4/
+├── Session 4 - Data Structures.pdf     ← the slides
+└── 04-data-structures-elruva/          ← the exercises (work here)
+    ├── README.md                       ← what the session covers
+    ├── 01_Lists/  02_Dictionaries/  03_StringMethods/  04_Files/
+    └── each holding 01_predict.py … NN_make.py
+```
+
+| Lecture | Exercise repo | Subfolders | `.py` files |
+|---|---|---|---|
+| `L1` | `01-python-basics` | `01_Output` `02_Variables` `03_Input` `04_Math` `05_Modify_Make` | 26 |
+| `L2` | `02-flow-control-elruva` | `01_Boolean_Conditions` `02_Selection` `03_Iteration` | 17 |
+| `L3` | `03-functions-elruva` | `01_Function_Basics` `02_Parameters` `03_Return_Values` `04_Modules` `05_Error_Handling` `06_Make` | 22 |
+| `L4` | `04-data-structures-elruva` | `01_Lists` `02_Dictionaries` `03_StringMethods` `04_Files` | 35 |
+| `L5` | `05-regex-elruva` | `01_Regex_Exercises` | 10 |
+
+Two exceptions to the pattern:
+
+- **`L1`** holds *two* slide decks — `Session 0 - Introduction.pdf` and
+  `Session 1 - Python Basics.pdf` — because lecture 1 covered both. It also has
+  an `OUTLINE.md`, and its exercise folder is a ZIP copy with no git remote.
+- **`L5`** contains the regex repo (`05-regex-elruva`), even though lecture 5 on
+  the schedule below is Practical Projects 1. The course numbers its repos by
+  deck, and regex is taught in lecture 6 — filed under `L5` to match the repo
+  name. Both had happened by 05-08-2026, so nothing is out of bounds.
+
+The remaining lectures (L6–L13) have no folders yet; create them as the sessions
+happen.
 
 ## Conventions
 

@@ -6,7 +6,7 @@ Everything here is run from the repo folder. Start every session with:
 cd ~/computational
 ```
 
-This repo lives at <https://github.com/elruva/programming-for-business-problems>.
+This repo lives at <https://github.com/elruva/programming-for-business-problems->.
 
 ---
 
