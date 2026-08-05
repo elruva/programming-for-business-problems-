@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+
+# Editor / tooling
+.vscode/
+.claude/settings.local.json
+
+# Claude 
+.claude/
+
+#Github 
+.github/
+
+
+# Files the L4 file exercises generate when you run them
+lectures/L4/04-data-structures-elruva/products.csv
+lectures/L4/04-data-structures-elruva/report.txt
+lectures/L4/04-data-structures-elruva/wordcount.txt
+lectures/L4/04-data-structures-elruva/04_Files/newdata.txt
+lectures/L4/04-data-structures-elruva/04_Files/newdata.csv
+
+
+
+

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(/bin/ls assignments/01-python-basics-elruva/)",
+      "Bash(/bin/ls assignments/01-python-basics-elruva/01_Output/)",
+      "Bash(/bin/ls assignments/01-python-basics-elruva/05_Modify_Make/)",
+      "Bash(/bin/ls)",
+      "Bash(/bin/ls assignments/)",
+      "Bash(/bin/ls lectures/L1/01-python-basics/)",
+      "Bash(grep -n \"^#\\\\{1,3\\\\} \" PRACTICE.md)",
+      "Bash(python *)"
+    ]
+  }
+}
