@@ -5,7 +5,7 @@
 # Write your prediction as a comment after each print() statement.
 # ============================================================
 
-with open('04_Files/mydata.txt') as fileHandler:
+with open('lectures/L4/04-data-structures-elruva/04_Files/mydata.csv') as fileHandler:
     for line in fileHandler:
         print(line.strip())  # Your prediction: the 4 lines of mydata.txt, e.g. Niko, +491701231123, nstein@test.de
 

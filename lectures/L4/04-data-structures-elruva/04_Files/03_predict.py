@@ -11,7 +11,7 @@ import csv
 # The first row of the CSV is used as keys (column headers)
 # This makes it easier to access values by column name instead of index
 
-with open('04_Files/mydata2.csv', 'r') as file:
+with open('lectures/L4/04-data-structures-elruva/04_Files/mydata2.csv', 'r') as file:
     reader = csv.DictReader(file)
     for row in reader:
         print(row)  # Your prediction: each row as a dictionary, e.g. {'Name': 'Niko', ' Phone': ' +491701231123', ' Email': ' nstein@test.de'}

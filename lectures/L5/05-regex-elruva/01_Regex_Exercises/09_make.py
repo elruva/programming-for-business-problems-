@@ -33,3 +33,25 @@ captions = [
 # ============================================================
 # Write your code below:
 # ============================================================
+
+total = 0
+
+for caption in captions:
+    hashtags = re.findall(r"#\w+", caption)
+    mentions = re.findall(r"@\w+", caption)
+    print("Caption:", caption)
+    print("  Hashtags:", hashtags)
+    print("  Mentions:", mentions)
+    total = total + len(hashtags)
+
+print("Total hashtags:", total)
+
+
+# ============================================================
+# HOW IT WORKS
+# ============================================================
+# r"#\w+"  = a # and then one or more word characters (letters, digits, _)
+# r"@\w+"  = the same idea with an @
+# findall() gives back a list, and an empty list [] when nothing is found -
+# that is why the third caption prints two empty lists.
+# len() counts how many hashtags that caption had, and total adds them up.

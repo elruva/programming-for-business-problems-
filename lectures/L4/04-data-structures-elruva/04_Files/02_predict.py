@@ -7,7 +7,7 @@
 
 import csv
 
-with open('04_Files/mydata.csv', 'r') as file:
+with open('lectures/L4/04-data-structures-elruva/04_Files/mydata.csv', 'r') as file:
     reader = csv.reader(file, delimiter=',')
     for row in reader:
         print(row)  # Your prediction: each row as a list, e.g. ['Niko', ' +491701231123', ' nstein@test.de']

@@ -19,7 +19,7 @@ data = [
 
 keys = ['name', 'age']
 
-with open('04_Files/newdata.csv', 'w', newline='') as file:
+with open('lectures/L4/04-data-structures-elruva/04_Files/newdata.csv', 'w', newline='') as file:
     writer = csv.DictWriter(file, fieldnames=keys)
     writer.writeheader()
     for entry in data:

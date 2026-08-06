@@ -40,3 +40,33 @@ codes = [
 # ============================================================
 # Write your code below:
 # ============================================================
+
+# ^         the string must start here
+# [A-Z]{2}  exactly two capital letters
+# -         a hyphen
+# \d{4}     exactly four digits
+# (-[A-Z])? an optional hyphen plus ONE capital letter
+# $         the string must end here
+reg = re.compile(r"^[A-Z]{2}-\d{4}(-[A-Z])?$")
+
+valid_codes = 0
+
+for code in codes:
+    if reg.search(code):
+        print(code, "-> valid")
+        valid_codes = valid_codes + 1
+    else:
+        print(code, "-> invalid")
+
+print("Valid codes:", valid_codes)
+
+
+# ============================================================
+# WHY THE ANCHORS MATTER
+# ============================================================
+# Without ^ and $ the pattern would only ask "is this shape somewhere inside
+# the string?", so "ABC-1234" would pass because "BC-1234" is hiding in it.
+# The anchors make the whole string have to fit.
+#
+# "AB-1234-AB" is invalid because the optional part allows only ONE capital
+# letter after the second hyphen, and then $ demands the end of the string.
